@@ -1,6 +1,6 @@
-import { Card } from "./Cards.js";
+import { Animacao } from "./Animacao.js";
 
 window.onload = ( ) => {
-    let animaCard =new Card ()
+    let animaCard = new Animacao ()
     document.addEventListener('scroll',animaCard.scrollCard.bind(animaCard));
 }

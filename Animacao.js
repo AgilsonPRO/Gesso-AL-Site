@@ -1,4 +1,4 @@
-class Card {
+class Animacao {
     constructor() {
        this.posicaoVantagens = document.getElementById('Vantagens');
        this.posicaoServicos  = document.getElementById ('tools');
@@ -32,4 +32,4 @@ class Card {
 
 }
 
-export { Card }
+export { Animacao }
