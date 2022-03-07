@@ -10,6 +10,7 @@ class Card {
         window.requestAnimationFrame (this.CalculoScroll.bind(this));
         window.requestAnimationFrame (this.CalculoScroll1.bind(this));
     }
+    //Cards aparecendo da esquerda para direita de acordo com a posição da tela
     CalculoScroll() {
         const posicao =  this.posicaoVantagens.getBoundingClientRect()['y']
         console.log(posicao);
@@ -18,7 +19,7 @@ class Card {
         
         }
     }
-
+    // Cards aparecendo da direita para esquerda de acordo com a posção da tela
     CalculoScroll1(){
         const posicao = this.posicaoServicos.getBoundingClientRect()['y']
         console.log(posicao);
