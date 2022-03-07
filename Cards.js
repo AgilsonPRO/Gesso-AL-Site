@@ -23,7 +23,7 @@ class Card {
         const posicao = this.posicaoServicos.getBoundingClientRect()['y']
         console.log(posicao);
         if (posicao >= 108) {
-        this.cardserv.style.transform =`translate(${((-posicao )+ 108)/10}%)`;
+        this.cardserv.style.transform =`translate(${((posicao )- 108)/10}%)`;
         }
     }
     
