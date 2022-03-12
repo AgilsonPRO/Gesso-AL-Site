@@ -1,3 +1,4 @@
+
 class Animacao {
     constructor() {
        this.posicaoAtend     = document.getElementById('calculator') //monitora a posição do elemento
@@ -34,9 +35,10 @@ class Animacao {
         const posicao = this.posicaoAtend.getBoundingClientRect()['y']
         console.log(posicao);
         if (posicao <= 111){
-        this.Atende.style = "visibility: visible;";
+        this.Atende.style = "opacity: 1; transition: opacity 1s ease-out";
+
         }else{
-        this.Atende.style = "visibility: hidden;";    
+        this.Atende.style = "opacity: 0; transition: opacity 1s ease-out";    
         }
     }
     
