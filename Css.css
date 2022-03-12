@@ -71,6 +71,19 @@
 	margin-left: 10px;
 }
 
+#card:hover{
+ box-shadow:  0 0 30px gray;
+}
+
+#card2:hover{
+  color:#FFF;
+  background-color: #4682B4;
+}
+
+#card2:hover .card-footer{
+  background-color: #FFF;
+}
+
 #card-img{
 	align-items:justify;
 	text-align: justify;
