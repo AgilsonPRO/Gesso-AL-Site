@@ -23,7 +23,7 @@ class Animacao {
         
         }
     }
-    // Cards aparecendo da direita para esquerda de acordo com a posção da tela
+    // Cards SERVIÇOS aparecendo da direita para esquerda de acordo com a posção da tela
     CalculoScroll1(){
         const posicao = this.posicaoServicos.getBoundingClientRect()['y']
         console.log(posicao);
