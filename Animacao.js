@@ -34,7 +34,7 @@ class Animacao {
     CalculoScroll2(){
         const posicao = this.posicaoAtend.getBoundingClientRect()['y']
         console.log(posicao);
-        if (posicao <= 111){
+        if (posicao <= 118){
         this.Atende.style = "opacity: 1; transition: opacity 1s ease-out";
 
         }else{
