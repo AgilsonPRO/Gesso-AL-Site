@@ -11,6 +11,13 @@ html{
   height: 500px;
   flex: auto;
 }
+.fs-3{
+	width: 80%;
+	text-align:justify;
+	margin-left: 10%;
+	margin-right:10%;
+	
+}
 
 #body {
   overflow-x: hidden;
@@ -42,18 +49,9 @@ html{
 	height:400px;
 	max-width:100%;
 }
-
-#bloco2{
-    font-family:Verdana, Geneva, sans-serif; 
-    color:#FFF;
-    display: block;
-	background-color:#4682B4; 
-	background-image: url(IMAGENS/whiteBlueLines.jpg);
-	background-size:cover;
-	background-repeat: no-repeat;
-	height:450px;
-	max-width:100%;
-	
+.img-carrousel{
+	max-width:10%;
+	max-height:10%;
 }
 
 .Titulos{
@@ -61,6 +59,8 @@ html{
 	color:#4682B4;
 
 }
+
+
 
 .card1{	
 	display:inline-block;
@@ -74,10 +74,6 @@ html{
 	margin-right: 10px;
 	margin-left: 10px;
 	border-style: groove;
-}
-
-.card-serv{
-	justify-content:space-around;
 }
 
 .card-text{
@@ -115,8 +111,9 @@ html{
  height: 300px;
  border-style: groove;
 }
-.card-vant{
-	justify-content: space-around;
+
+.card-footer{
+	margin-top: 70px;
 }
 #Rodape{
 	width: 100%;
@@ -140,3 +137,14 @@ html{
 	height:auto;
 	align-items:justify;
 }
+.DevCredits{ 
+font-family: cursive;	
+color:#FFF	;
+width:auto; 
+height:auto;
+background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+	}
