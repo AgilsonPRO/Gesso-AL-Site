@@ -40,7 +40,8 @@ $mensagem = $_POST["mensagem"];
     if(!$mail->send()) {
         echo 'Não foi possível enviar a mensagem.<br>';
         echo 'Erro: ' . $mail->ErrorInfo;
+        header('Location: index.php?email=1#local');
     } else {
-         header('Location: index.html');
+         header('Location: index.php?email=2#local');
     }
 ?>
