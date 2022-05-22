@@ -2,7 +2,17 @@
 <html lang="pt-br">
 <meta charset="utf-8">
 
-
+<!-- função reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Leaj-4fAAAAALzPETblP4Tt0kY8slMykWKAgd7o"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Leaj-4fAAAAALzPETblP4Tt0kY8slMykWKAgd7o', {action: 'login'}).then(function(token) {
+       ...
+    });
+});
+</script>
+<!-- reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,6 +24,8 @@
 
   gtag('config', 'UA-109289062-1');
 </script>
+
+
 
   <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -354,16 +366,16 @@
 
   <div class="container" id="mapa">
     <div class="shadow" id="Fale-conosco">
-      <h3>Fale Conosco</h3>
-      <form action="SendMail.php" method="post">
+      <h3 class="bi bi-envelope"> Fale Conosco</h3>
+      <form action="SendMail.php" method="post" id="faleCom">
         <input class="form-control" type="text" name="nome" aria-label="Nome" placeholder="Digite nome completo:" aria-describedby="input-nome" required>
        <input type="email" class="form-control" name="email" placeholder="Digite o seu email:" required>
        <textarea type="text" class="form-control" name="mensagem" placeholder="Digite a mensagem:" rows="10" cols="90" required></textarea>
-       <button class="btn btn-success"type="submit">ENVIAR</button>
+       <button class="btn btn-success" id="Enviar" type="submit">ENVIAR</button>
       </form>
   </div>
     <div class="shadow" id="local">
-      <h3>Estamos Aqui</h3>
+      <h3 class="bi bi-geo-alt"> Estamos Aqui</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.1905762989377!2d-48.28283488572312!3d-15.741054425837389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bb8f5390acde9%3A0x155c03c3add6224d!2sGesso%20AL!5e0!3m2!1spt-BR!2sbr!4v1651601707752!5m2!1spt-BR!2sbr"
        width="750" height="335" style="border:1; max-width: 100%;border-radius:30px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
