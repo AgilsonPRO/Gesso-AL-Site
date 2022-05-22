@@ -169,6 +169,10 @@ html{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+#Enviar{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 .zoom { transition: all .2s ease-in-out; }
 .zoom:hover  { transform: scale(1.1); }
 
