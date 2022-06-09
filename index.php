@@ -2,18 +2,6 @@
 <html lang="pt-br">
 <meta charset="utf-8">
 
-<!-- função reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Leaj-4fAAAAALzPETblP4Tt0kY8slMykWKAgd7o"></script>
-<script>
-grecaptcha.enterprise.ready(function() {
-    grecaptcha.enterprise.execute('6Leaj-4fAAAAALzPETblP4Tt0kY8slMykWKAgd7o', {action: 'login'}).then(function(token) {
-       ...
-    });
-});
-</script>
-<!-- reCAPTCHA -->
-<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
-
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109289062-1"></script>
@@ -25,8 +13,7 @@ grecaptcha.enterprise.ready(function() {
   gtag('config', 'UA-109289062-1');
 </script>
 
-
-
+<!-- botão compartilhar facebook -->
   <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -45,11 +32,13 @@ grecaptcha.enterprise.ready(function() {
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <!--Inserindo bootstrap.js via CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<!-- Inserindo pacote de icones via CDN-->
+<!-- Inserindo pacote de icones boostrap via CDN-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <!--Inserindo pacote de animações via CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<!-- isenrindo pacote de icones google-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -159,9 +148,6 @@ grecaptcha.enterprise.ready(function() {
 <hr>
 
 <!-- Inicio da apresentação dos cards com as opções de serviços-->
-
-
-
 <div class="shadow">
 <div class="container-card1">
  
@@ -355,15 +341,13 @@ grecaptcha.enterprise.ready(function() {
 <!-- Inicio do bloco de orçamento e opção de contato via whatsapp-->
 
 <div class="shadow" id="bloco1">
-
-<div class="Atendimento">
+  <div class="Atendimento">
     <h2><p class="display-4" >Atendemos em todo DF e entorno!</p></h2>
     <h4><p class="fs-3"> Solicite um orçamento através do nosso whatsapp clicando no botão abaixo e tire todas suas dúvidas.</p></h4>
      <a href="https://api.whatsapp.com/send?phone=5561984288454&text=Faça uma pergunta sobre projetos em gesso e temtaremos responder o mais breve possível"><img src="IMAGENS/botao-whatsapp.png" width="337" height="101" class="animate__animated animate__pulse animate__infinite"></a>
-</div>
   </div>
+</div>
   <br>
-
   <div class="container" id="mapa">
     <div class="shadow" id="Fale-conosco">
       <h3 class="bi bi-envelope"> Fale Conosco</h3>
@@ -404,11 +388,15 @@ if($email == 2)
   </div>
   <hr>
   
+  <br>
+
   <section>
     <div class="banner">
       <img src="./IMAGENS/banner-instagram.png" id="banner-instagram">
     </div>
   </section>
+
+  <br>
   
 <!--<section class="shadow" id="TimeLine">
 
@@ -471,7 +459,9 @@ if($email == 2)
 <section id="whatsapp"></section>
 
 <!-- seta voltar ao topo -->
-<h1><a href="#Home" class="bi bi-arrow-up-square-fill" style="margin-left: 90%;" alt="Voltar ao topo"></a></h1>
+<div class="B-flutuante" style="visibility: hidden;">
+<a href="#Home" alt="Voltar ao topo"><i class="bi-arrow-up-circle-fill"></i></a>
+</div>
 
 <!-- inicio do rodapé -->
 <div class="row justify-content-center" id="Rodape">
