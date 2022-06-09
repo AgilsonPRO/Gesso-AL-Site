@@ -19,6 +19,22 @@ html{
 	
 }
 
+.B-flutuante{
+	top:85%;
+	margin-left:85%;
+	padding-right:5%;
+	position:fixed;
+}
+.bi-arrow-up-circle-fill{
+	font-size: 50px;
+	color:#ff4000;
+	z-index: 1000;
+}
+.bi-arrow-up-circle-fill:hover{
+	color:#d93600;
+}
+
+
 #body {
   overflow-x: hidden;
   text-align: center;
