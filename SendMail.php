@@ -22,11 +22,13 @@ $mensagem = $_POST["mensagem"];
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
     $mail->Mailer = "smtp";
-    $mail->Username = 'agilson_xxt@hotmail.com';
-    $mail->Password = '@Riachu01';
+    $mail->Username = base64_decode('YWdpbHNvbl94eHRAaG90bWFpbC5jb20=');
+    $mail->Password = base64_decode('QFJpYWNodTAx');
     $mail->Port = 587;
 
-    $mail->SetFrom('agilson_xxt@hotmail.com');
+    var_dump($email->Username);
+
+    $mail->SetFrom(base64_decode('YWdpbHNvbl94eHRAaG90bWFpbC5jb20='));
     $mail->addAddress('agilson.profissional@gmail.com');
     $mail->addReplyTo($email);
 
