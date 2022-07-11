@@ -13,6 +13,16 @@
   gtag('config', 'UA-109289062-1');
 </script>
 
+<!-- Google recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  function validaPost(){
+    if(grecaptcha.getResponse() != "")return true;
+    alert("Preencha o campo (Não sou um robô)");
+    return false;
+  }
+</script>
+
 <!-- botão compartilhar facebook -->
   <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -351,10 +361,11 @@
   <div class="container" id="mapa">
     <div class="shadow" id="Fale-conosco">
       <h3 class="bi bi-envelope"> Fale Conosco</h3>
-      <form action="SendMail.php" method="post" id="faleCom">
-        <input class="form-control" type="text" name="nome" aria-label="Nome" placeholder="Digite nome completo:" aria-describedby="input-nome" required>
+      <form action="SendMail.php" method="post" id="faleCom" onsubmit="return validaPost()">
+       <input class="form-control" type="text" name="nome" aria-label="Nome" placeholder="Digite nome completo:" aria-describedby="input-nome" required>
        <input type="email" class="form-control" name="email" placeholder="Digite o seu email:" required>
        <textarea type="text" class="form-control" name="mensagem" placeholder="Digite a mensagem:" rows="10" cols="90" required></textarea>
+       <div class="g-recaptcha" data-sitekey="6Ld1juAgAAAAAGgi9tzWF-ad0huR_JHCuQat7XzP"></div>
        <button class="btn btn-success" id="Enviar" type="submit">ENVIAR</button>
       </form>
   </div>

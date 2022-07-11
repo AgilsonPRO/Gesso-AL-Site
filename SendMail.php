@@ -10,6 +10,25 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+//validando recaptcha
+$curl = curl_init();
+curl_setopt_array($curl,[
+CURLOPT_URL=>'https://www.google.com/recaptcha/api/siteverify',
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_CUSTOMREQUEST => 'POST',
+CURLOPT_POSTFIELDS =>[
+'secret'=>'6Ld1juAgAAAAAOKGfEQDFgj6CO-qEqI7LyIYZv_x',
+'response'=> $_POST['g-recaptcha-response'] ?? '']
+]);
+
+$result = curl_exec($curl);
+curl_close($curl);
+
+$resultarray =json_decode($result,true);
+$sucesso = $resultarray['success'] ?? false;
+
+if($sucesso == true){
+
 $nome = $_POST["nome"];
 $email= $_POST["email"];
 $mensagem = $_POST["mensagem"]; 
@@ -46,4 +65,8 @@ $mensagem = $_POST["mensagem"];
     } else {
          header('Location: index.php?email=2#local');
     }
+}else{
+    echo" Erro ao validar Recaptcha";
+    header('Location: index.php?email=1#local');
+}    
 ?>
